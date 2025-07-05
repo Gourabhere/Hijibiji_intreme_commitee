@@ -18,14 +18,14 @@ export default function ModernFlatMaintenanceNotice() {
     {
       icon: Shield,
       title: "Security Coverage",
-      description: "Our guards will patrol your flat regularly, even if you're not living there yet.",
+      description: "Trained guards will patrol around your block. Your car parked outside will be safe.",
       additionalInfo: "Unauthorized entry or damage will be monitored and prevented.",
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50",
     },
     {
       icon: Sparkles,
-      title: "Cleaning & Upkeep",
+      title: "Cleaning & Upkeep Lobby area and staircase",
       description: "The front door and lobby area of your flat will be cleaned.",
       additionalInfo: "Cobwebs, dust and trash will be cleared periodically.",
       color: "from-green-500 to-emerald-500",
@@ -35,23 +35,23 @@ export default function ModernFlatMaintenanceNotice() {
       icon: Wrench,
       title: "Flat Access for Work",
       description: "Monitored access for workers needing entry to complete work in your flat or neighboring units.",
-      additionalInfo: "Supervised entry ensures that all work is conducted securely and without issues.",
+      additionalInfo: "",
       color: "from-orange-500 to-red-500",
       bgColor: "bg-orange-50",
     },
     {
         icon: Package,
         title: "Parcel & Delivery Handling",
-        description: "If a delivery for pending interior or repair work reaches your flat, supervised entry will ensure nothing goes wrong.",
-        additionalInfo: "Securely receive packages and allow access for work-related deliveries, even when you're not there.",
+        description: "If delivery reaches your flat anytime to complete pending interior or repair work, supervised entry will ensure nothing goes wrong.",
+        additionalInfo: "",
         color: "from-amber-500 to-yellow-500",
         bgColor: "bg-amber-50",
     },
     {
       icon: Camera,
       title: "Flat Monitoring (Coming Soon)",
-      description: "Plan to implement photo/video log: manage and safeguard it properly.",
-      additionalInfo: "An upcoming feature for an enhanced layer of digital security and accountability.",
+      description: "Monitoring of CC camera footage in real time.",
+      additionalInfo: "",
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-50",
     }
@@ -184,7 +184,7 @@ export default function ModernFlatMaintenanceNotice() {
                           {service.description}
                         </p>
                         <AnimatePresence>
-                          {activeService === index && (
+                          {activeService === index && service.additionalInfo && (
                             <motion.p
                               initial={{ opacity: 0, height: 0 }}
                               animate={{ opacity: 1, height: "auto" }}
