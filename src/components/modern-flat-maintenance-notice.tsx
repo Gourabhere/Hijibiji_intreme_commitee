@@ -130,8 +130,8 @@ export default function ModernFlatMaintenanceNotice() {
           >
             <Home className="w-10 h-10 text-white" />
           </motion.div>
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4">
-            A Notice for Hijibiji Flat Owners
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent mb-4 drop-shadow-sm">
+            Attention: Hijibiji Registered Flat Owners
           </h1>
           <div className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl shadow-xl">
             <p className="text-lg md:text-xl font-semibold">
