@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, Shield, Sparkles, Wrench, Package, Camera, CheckCircle, CreditCard, Bell, Star, ArrowRight } from 'lucide-react';
+import { Home, Shield, Sparkles, Wrench, Package, Camera, CheckCircle, CreditCard, Bell, Star, ArrowRight, Users } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 export default function ModernFlatMaintenanceNotice() {
@@ -233,6 +233,33 @@ export default function ModernFlatMaintenanceNotice() {
                   </div>
                 </motion.div>
               ))}
+            </div>
+          </motion.div>
+
+          {/* Interim Committee Section */}
+          <motion.div
+            className="bg-card p-8 border-t border-border"
+            variants={itemVariants}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <Users className="w-8 h-8 text-primary" />
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                Hijibiji Interim Committee
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-muted-foreground text-base">
+              <div><span className="font-semibold text-foreground">President:</span> Dhruba Nan</div>
+              <div><span className="font-semibold text-foreground">Secretary:</span> Gourab Saha</div>
+              <div><span className="font-semibold text-foreground">Jt. Secretary:</span> Safiullah Sheikh</div>
+              <div><span className="font-semibold text-foreground">Treasurer:</span> Panchami Roy</div>
+              <div className="sm:col-span-2">
+                <span className="font-semibold text-foreground">Members:</span>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Nirmalendu Ray</li>
+                  <li>Shuvayu Ghosh</li>
+                  <li>Sayan Banerjee</li>
+                </ul>
+              </div>
             </div>
           </motion.div>
 
