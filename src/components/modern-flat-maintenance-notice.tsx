@@ -131,11 +131,11 @@ export default function ModernFlatMaintenanceNotice() {
             <Home className="w-10 h-10 text-white" />
           </motion.div>
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4">
-            Attention: Registered Flat Owners
+            A Notice for Hijibiji Flat Owners
           </h1>
           <div className="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl shadow-xl">
             <p className="text-lg md:text-xl font-semibold">
-              Contribute to Maintenance & Security for Your Own Safety and Comfort
+              Contribute to Hijibiji's Maintenance & Security for Your Safety and Comfort
             </p>
           </div>
         </motion.div>
@@ -297,7 +297,7 @@ export default function ModernFlatMaintenanceNotice() {
                   Ready to Get Started?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Contact your building management to set up your maintenance contribution and enjoy all the benefits!
+                  Contact Hijibiji's building management to set up your maintenance contribution and enjoy all the benefits!
                 </p>
                 <motion.button
                   className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-3 rounded-xl font-bold w-full hover:shadow-lg transition-all duration-300"
