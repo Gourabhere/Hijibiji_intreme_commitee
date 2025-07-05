@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Home, Shield, Sparkles, Wrench, Package, Camera, CheckCircle, CreditCard, Bell, Star, ArrowRight } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 export default function ModernFlatMaintenanceNotice() {
   const [activeService, setActiveService] = useState<number | null>(null);
@@ -17,16 +18,18 @@ export default function ModernFlatMaintenanceNotice() {
     {
       icon: Shield,
       title: "Security Coverage",
-      description: "Trained guards will patrol around your block. Your car parked outside will be safe.",
+      description: "Our guards will patrol your flat regularly, even if you're not living there yet.",
       additionalInfo: "Unauthorized entry or damage will be monitored and prevented.",
       color: "from-blue-500 to-cyan-500",
+      bgColor: "bg-blue-50",
     },
     {
       icon: Sparkles,
       title: "Cleaning & Upkeep",
-      description: "The front door, lobby area, and staircase of your block will be cleaned.",
+      description: "The front door and lobby area of your flat will be cleaned.",
       additionalInfo: "Cobwebs, dust and trash will be cleared periodically.",
       color: "from-green-500 to-emerald-500",
+      bgColor: "bg-green-50",
     },
     {
       icon: Wrench,
@@ -34,6 +37,7 @@ export default function ModernFlatMaintenanceNotice() {
       description: "Monitored access for workers needing entry to complete work in your flat or neighboring units.",
       additionalInfo: "Supervised entry ensures that all work is conducted securely and without issues.",
       color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-50",
     },
     {
         icon: Package,
@@ -41,13 +45,15 @@ export default function ModernFlatMaintenanceNotice() {
         description: "If a delivery for pending interior or repair work reaches your flat, supervised entry will ensure nothing goes wrong.",
         additionalInfo: "Securely receive packages and allow access for work-related deliveries, even when you're not there.",
         color: "from-amber-500 to-yellow-500",
+        bgColor: "bg-amber-50",
     },
     {
       icon: Camera,
       title: "Flat Monitoring (Coming Soon)",
-      description: "Monitoring of CC camera footage in real time.",
+      description: "Plan to implement photo/video log: manage and safeguard it properly.",
       additionalInfo: "An upcoming feature for an enhanced layer of digital security and accountability.",
       color: "from-purple-500 to-pink-500",
+      bgColor: "bg-purple-50",
     }
   ];
 
@@ -157,7 +163,7 @@ export default function ModernFlatMaintenanceNotice() {
                 return (
                   <motion.div
                     key={index}
-                    className="relative p-6 rounded-2xl border-2 border-transparent cursor-pointer transition-all duration-300 bg-card hover:border-white hover:shadow-xl"
+                    className={cn("relative p-6 rounded-2xl border-2 border-transparent cursor-pointer transition-all duration-300 hover:shadow-xl", service.bgColor)}
                     variants={itemVariants}
                     whileHover={{ scale: 1.02, y: -5 }}
                     onHoverStart={() => setActiveService(index)}
