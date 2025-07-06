@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hijibiji Interim Committee Announcement',
     description: 'Latest update from the Hijibiji community on interim committee formation.',
-    images: ['https://i.imghippo.com/files/LPI1470AGU.png'],
+    images: ['https://i.ibb.co/CKB0fXtV/Screenshot-20250706-073149-Chrome.jpg'],
     url: 'https://hijibiji-interim-committee.netlify.app/',
     type: 'website',
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hijibiji Interim Committee Announcement',
     description: 'Latest update from the Hijibiji community on interim committee formation.',
-    images: ['https://i.imghippo.com/files/LPI1470AGU.png'],
+    images: ['https://i.ibb.co/CKB0fXtV/Screenshot-20250706-073149-Chrome.jpg'],
   },
   icons: {
     icon: 'https://i.imghippo.com/files/LPI1470AGU.png',
