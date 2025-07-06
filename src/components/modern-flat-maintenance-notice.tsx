@@ -250,7 +250,7 @@ export default function ModernFlatMaintenanceNotice() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-muted-foreground text-base">
               <div><span className="font-semibold text-foreground">President:</span> Dhruba Nan</div>
               <div><span className="font-semibold text-foreground">Secretary:</span> Gourab Saha</div>
-              <div><span className="font-semibold text-foreground">Jt. Secretary:</span> Safiullah Sheikh</div>
+              <div><span className="font-semibold text-foreground">Jt. Secretary:</span> Safiullah  Shaikh</div>
               <div><span className="font-semibold text-foreground">Treasurer:</span> Panchami Roy</div>
               <div className="sm:col-span-2">
                 <span className="font-semibold text-foreground">Members:</span>
