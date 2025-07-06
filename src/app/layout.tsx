@@ -2,8 +2,21 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Hijibiji Announcement',
-  description: 'Hijibiji Maintenance and Security Announcement',
+  title: 'Hijibiji Interim Committee Announcement',
+  description: 'Latest update from the Hijibiji community on interim committee formation.',
+  openGraph: {
+    title: 'Hijibiji Interim Committee Announcement',
+    description: 'Latest update from the Hijibiji community on interim committee formation.',
+    images: ['https://www.imghippo.com/i/hws3568hSI.png'],
+    url: 'https://hijibiji-interim-committee.netlify.app/',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hijibiji Interim Committee Announcement',
+    description: 'Latest update from the Hijibiji community on interim committee formation.',
+    images: ['https://www.imghippo.com/i/hws3568hSI.png'],
+  },
 };
 
 export default function RootLayout({
