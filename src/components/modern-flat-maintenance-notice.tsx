@@ -321,19 +321,21 @@ export default function ModernFlatMaintenanceNotice() {
                   <Star className="w-8 h-8 text-primary-foreground" />
                 </motion.div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Ready to Get Started?
+                  Cast Your Vote!
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Contact Hijibiji's building management to set up your maintenance contribution and enjoy all the benefits!
+                  Join the WhatsApp poll to make your voice heard in the community. Your participation is important!
                 </p>
-                <motion.button
-                  className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-3 rounded-xl font-bold w-full hover:shadow-lg transition-all duration-300"
+                <motion.a
+                  href="https://chat.whatsapp.com/DdCuvm0fKYA4IPjVMicCSY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-3 rounded-xl font-bold w-full hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => setShowPaymentModal(false)}
                 >
-                  Got it!
-                </motion.button>
+                  ✅ Vote Now on WhatsApp
+                </motion.a>
               </div>
             </motion.div>
           </motion.div>
